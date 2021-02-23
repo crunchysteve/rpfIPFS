@@ -8,6 +8,10 @@ body {
     background: #543;
 }
 
+iframe {
+    allowfullscreen: true;
+}
+
 a {
     color: yellowgreen;
 }
