@@ -9,6 +9,9 @@ body {
 }
 
 iframe {
+    title:"Anaconda";
+    border:none;
+    border:none;
     allowfullscreen: true;
     width: 650px;
 }
