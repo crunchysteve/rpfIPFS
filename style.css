@@ -10,6 +10,7 @@ body {
 
 iframe {
     title:"Anaconda";
+    srcdoc:paragraph;
     border:none;
     border:none;
     allowfullscreen: true;
