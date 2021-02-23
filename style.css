@@ -10,6 +10,7 @@ body {
 
 iframe {
     allowfullscreen: true;
+    width: 650px;
 }
 
 a {
