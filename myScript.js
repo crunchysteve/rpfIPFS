@@ -1,3 +1,3 @@
 function myFunctionc() {
-  document.getElementById("demo").innerHTML = "...are soon parted.";
+  document.getElementById("tute1c").innerHTML = "...are soon parted.";
 }
