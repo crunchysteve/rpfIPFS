@@ -8,13 +8,10 @@ body {
     background: #543;
 }
 
-iframe {
-    title:"Anaconda";
-    srcdoc:paragraph;
-    border:none;
-    border:none;
-    allowfullscreen: true;
-    width: 650px;
+p.owner {
+    line-height: 1.3;
+    font-family: serif;
+    font-size: 1em;
 }
 
 a {
