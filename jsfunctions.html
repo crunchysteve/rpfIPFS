@@ -18,11 +18,9 @@
     <script>
         //document.getElementById("output1").innerHTML = "Hello World!";
         function toCelsius(fahrenheit) {
-            var myInt = (5/9) * (fahrenheit-32);
-            myInt = num.toFixed(0);
-            return myInt;
+            return (5/9) * (fahrenheit-32);
         }
-        document.getElementById("output1").innerHTML = "100 degrees Faranheit is approximately " + toCelsius(100) + " degrees Celsius.";
+        document.getElementById("output1").innerHTML = "100 degrees Faranheit is " + toCelsius(100) + " degrees Celsius.";
     </script>
 </body>
 </html>
