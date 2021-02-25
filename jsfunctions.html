@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8" />
-    <title>Random Planet Facts</title>
+    <title>Javascript Tutorials</title>
     <meta http-equiv="refresh" content="300;url=http://clarifi.social" />
     <meta name="description" content="Get a random fact about a planet in our solar system." />
     <meta name="author" content="The IPFS Docs team." />
@@ -18,7 +18,9 @@
     <script>
         //document.getElementById("output1").innerHTML = "Hello World!";
         function toCelsius(fahrenheit) {
-            return (5/9) * (fahrenheit-32);
+            var myInt = (5/9) * (fahrenheit-32);
+            myInt = num.toFixed(0);
+            return myInt;
         }
         document.getElementById("output1").innerHTML = "100 degrees Faranheit is approximately " + toCelsius(100) + " degrees Celsius.";
     </script>
