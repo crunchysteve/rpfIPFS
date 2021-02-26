@@ -3,11 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title>Crunchysteve's View</title>
-  <link rel="stylesheet" href="styles/main.css">
+  <link rel="stylesheet" href="main.css">
 </head>
 
 <body class="light-theme">
-  <img id="logo" src="images/moon-logo.png" align="right" />
+  <img id="logo" src="moon-logo.png" align="right" />
   <button class="btn">Change to Dark</button>
   <h1>Crunchysteve's View</h1>
   <p id="msg">Todo List:</p>
@@ -21,7 +21,7 @@
 
   <script>
     // As with JSON, use the Fetch API & ES6
-    fetch('posts/hello.txt')
+    fetch('hello.txt')
       .then(response => response.text())
       .then(data => {
   	  // Do something with your data
@@ -29,7 +29,7 @@
     });
   </script>
 
-  <script src="scripts/app.js"></script>
+  <script src="app.js"></script>
   <noscript>You need to enable JavaScript to view the full site.</noscript>
   
 </body>
