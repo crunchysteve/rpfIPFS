@@ -14,7 +14,7 @@ switcher.addEventListener('click', function() {
     }
     console.log('current class name: ' + className);
 });
-
+/*
 function loadFile(filePath) {
     var result = null;
     var xmlhttp = new XMLHttpRequest();
@@ -25,6 +25,4 @@ function loadFile(filePath) {
     }
     return result;
   }
-  
-  var myStuff = loadFile("posts/hello.txt");
-  document.getElementById("out").innerHTML = file;
+  */
