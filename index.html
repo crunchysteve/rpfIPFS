@@ -22,7 +22,7 @@
 
     <p id="output"></p>
     
-    <script>
+    /* <script>
       const dropArea = document.getElementById('drop-area');
 
       dropArea.addEventListener('dragover', (event) => {
@@ -58,6 +58,10 @@
         document.getElementById("output").innerHTML = file;
         console.log(file);
       });
+    </script> */
+    <script>
+      var myStuff = loadFile("posts/hello.txt");
+      document.getElementById("out").innerHTML = file;
     </script>
   </div>
 
