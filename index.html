@@ -20,13 +20,16 @@
   <p id="output"></p>
 
   <script>
+    var myStuff = loadFile("posts/hello.txt");
+    document.getElementById("out").innerHTML = file;
+
     // As with JSON, use the Fetch API & ES6
     fetch("posts/hello.post")
       .then(response => response.text())
       .then(data => {
   	  // Do something with your data
   	  console.log(data);
-      document.getElementById("output").innerHTML = data;
+      document.getElementById("output").innerHTML = "<br />" + data;
     });
   </script>
 
