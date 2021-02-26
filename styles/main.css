@@ -58,14 +58,16 @@ li {
   }
 
   .btn {
-    top: 20px;
-    left: 400px;
+    position: absolute;
+    top: 25px;
+    left: 680px;
     height: 75px;
     width: 75px;
     border-radius: 50%;
     border: none;
     color: var(--btnFontColor);
     background-color: var(--btnBg);
+    filter: invert(var(--state));
   }
 
   .btn:focus { outline-style: none; }

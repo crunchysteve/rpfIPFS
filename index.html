@@ -8,19 +8,15 @@
 
 <body class="light-theme">
   <img id="logo" src="images/moon-logo.png" align="right" />
-  <button class="btn">Change to Dark</button>
-  <h1>Crunchysteve's View</h1>
+  <button class="btn">Make Dark</button>
+  <h1>Open.Social</h1>
   <p id="msg">Todo List:</p>
-  <ul>
-    <li class="list">Add visual styles</li>
-    <li class="list">Add light and dark themes</li>
-    <li>Enable switching the theme</li>
-  </ul>
+  
 
   <p id="output"></p>
 
   <script>
-    var fetchfile = "posts/hello.post";
+    var fetchfile = "posts/1.post";
     // As with JSON, use the Fetch API & ES6
     fetch(fetchfile)
       .then(response => response.text())
