@@ -1,7 +1,7 @@
   :root {
-    --green: #c1d0df;
-    --white: #ebbbbbb;
-    --black: #444444;
+    --grey: #888888;
+    --white: #bbbbbb;
+    --black: #222222;
   }
   
   * {
@@ -30,25 +30,25 @@ li {
   }
   
   .light-theme {
-    --bg: var(--green);
+    --bg: var(--white);
     --fontColor: var(--black);
     --btnBg: var(--black);
-    --btnFontColor: var(--green);
+    --btnFontColor: var(--grey);
   }
   
   .dark-theme {
     --bg: var(--black);
-    --fontColor: var(--green);
+    --fontColor: var(--white);
     --btnBg: var(--white);
-    --btnFontColor: var(--green);
+    --btnFontColor: var(--grey);
   }
 
   .btn {
     position: absolute;
     top: 20px;
     left: 400px;
-    height: 50px;
-    width: 50px;
+    height: 75px;
+    width: 75px;
     border-radius: 50%;
     border: none;
     color: var(--btnFontColor);
