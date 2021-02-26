@@ -18,8 +18,12 @@
 
   p.date {
     background: gray;
-    --fontColor: white;
+    color: white;
     width: 120px;
+  }
+
+  p.signoff {
+    text-decoration: underline;
   }
 
   img{
