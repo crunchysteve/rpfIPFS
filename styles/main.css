@@ -2,6 +2,9 @@
     --grey: #888888;
     --white: #bbbbbb;
     --black: #222222;
+    --true: 1;
+    --false: 0;
+    --state: var(--false);
   }
   
   * {
@@ -16,7 +19,7 @@
   }
 
   img{
-    filter: invert(1);
+    filter: invert(90%);
   }
 
 ul {
@@ -40,6 +43,7 @@ li {
     --fontColor: var(--black);
     --btnBg: var(--black);
     --btnFontColor: var(--grey);
+    --state: var(--false);
   }
   
   .dark-theme {
@@ -47,6 +51,7 @@ li {
     --fontColor: var(--white);
     --btnBg: var(--white);
     --btnFontColor: var(--grey);
+    --state: var(true);
   }
 
   .btn {
