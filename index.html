@@ -16,22 +16,17 @@
     <li class="list">Add light and dark themes</li>
     <li>Enable switching the theme</li>
   </ul>
+
   <p id="output"></p>
 
   <script>
-    function loadFile(filePath) {
-      var result = null;
-      var xmlhttp = new XMLHttpRequest();
-      xmlhttp.open("GET", filePath, false);
-      xmlhttp.send();
-      if (xmlhttp.status==200) {
-        result = xmlhttp.responseText;
-      }
-      return result;
-    }
-    
-    var myStuff = loadFile("posts/hello.txt");
-    document.getElementById("out").innerHTML = file;
+    // As with JSON, use the Fetch API & ES6
+    fetch('posts/hello.txt')
+      .then(response => response.text())
+      .then(data => {
+  	  // Do something with your data
+  	  console.log(data);
+    });
   </script>
 
   <script src="scripts/app.js"></script>
