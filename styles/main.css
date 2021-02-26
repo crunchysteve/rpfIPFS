@@ -18,6 +18,11 @@
       background: var(--bg);
   }
 
+  div {
+    background: gray;
+    height: 150px;
+  }
+
   img{
     filter: invert(90%);
   }

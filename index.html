@@ -16,8 +16,49 @@
     <li class="list">Add light and dark themes</li>
     <li>Enable switching the theme</li>
   </ul>
-  <div>
+  <div id="drop-area" width="100%" height="150px">
+    <!-- The `multiple` attribute lets users select multiple files. -->
+    <input type="file" id="drop-area" accept=".jpg, .jpeg, .png, .blog">
+
+    <p id="output"></p>
     
+    <script>
+      const dropArea = document.getElementById('drop-area');
+
+      dropArea.addEventListener('dragover', (event) => {
+        event.stopPropagation();
+        event.preventDefault();
+        // Style the drag-and-drop as a "copy file" operation.
+        event.dataTransfer.dropEffect = 'copy';
+      });
+
+      dropArea.addEventListener('drop', (event) => {
+        event.stopPropagation();
+        event.preventDefault();
+        const fileList = event.dataTransfer.files;
+        console.log(fileList);
+        const filesCount = fileList.length;
+        var file = "Files dropped...<br />";
+        for (let i = 0; i < filesCount; i++) {
+          file = file + "file " + i + " " + fileList[i]["name"] + "<br />";
+        }
+        document.getElementById("output").innerHTML = file;
+        console.log(file);
+      });
+
+      const fileSelector = document.getElementById('drop-area');
+      fileSelector.addEventListener('change', (event) => {
+        const fileList = event.target.files;
+        console.log(fileList);
+        const filesCount = fileList.length;
+        var file = "Files dropped...<br />";
+        for (let i = 0; i < filesCount; i++) {
+          file = file + "file " + i + " " + fileList[i]["name"] + "<br />";
+        }
+        document.getElementById("output").innerHTML = file;
+        console.log(file);
+      });
+    </script>
   </div>
 
   <script src="./scripts/app.js"></script>
