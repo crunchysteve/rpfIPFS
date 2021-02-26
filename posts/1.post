@@ -1,5 +1,5 @@
 <h2>Hello World!</h2>
-<p class="date">2021:02:26-1040</p>
+<p class="date">2021:02:26-10:40</p>
 
 <p>It may not seem like much, but this post is included in this page from an adjacent file in the server, and it has been done without 
 SSIs, PHP or CGI. It's been done with a javascript command. So what? Well, this is the first practical application I have ever created

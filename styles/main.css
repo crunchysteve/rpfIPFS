@@ -16,9 +16,10 @@
       background: var(--bg);
   }
 
-  div {
+  p.date {
     background: gray;
-    height: 150px;
+    --fontColor: white;
+    width: 120px;
   }
 
   img{
