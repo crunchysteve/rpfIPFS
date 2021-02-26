@@ -16,10 +16,29 @@
       background: var(--bg);
   }
 
+  h1 {
+    position: relative;
+    left: 20px;
+    bottom: 305px;
+  }
+
+  div.heading {
+    height: 250px;
+    background: rgb(100, 98, 109);
+  }
+
+  p.tagline {
+    position: relative;
+    left: 20px;
+    bottom: 170px;
+    font-size: 1.5em;
+  }
+
   p.date {
     background: gray;
     color: white;
-    width: 120px;
+    width: 150px;;
+    text-decoration-style: double;
   }
 
   p.signoff {
@@ -27,6 +46,13 @@
   }
 
   img{
+    filter: invert(var(--state));
+  }
+
+  img.heading {
+    position: relative;
+    left: 400px;
+    bottom: 10px;
     filter: invert(var(--state));
   }
 
@@ -63,9 +89,9 @@ li {
   }
 
   .btn {
-    position: absolute;
-    top: 25px;
-    left: 680px;
+    position: relative;
+    left: 310px;
+    bottom: 110px;
     height: 75px;
     width: 75px;
     border-radius: 50%;

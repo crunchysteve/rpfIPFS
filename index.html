@@ -7,14 +7,17 @@
 </head>
 
 <body class="light-theme">
-  <img id="logo" src="images/moon-logo.png" align="right" />
-  <button class="btn">Make Dark</button>
-  <h1>Open.Social</h1>
+  <div class="heading">
+    <img class="heading" id="logo" src="images/moon-logo.png" />
+    <button class="btn">Make Dark</button>
+    <h1>Open.Social</h1>
+    <p class="tagline">Evolving new social media.</p>
+  </div>
 
   <p id="output"></p>
 
   <script>
-    var fetchfile = "posts/1.post";
+    var fetchfile = "https://clarifi.social/posts/1.post";
     // As with JSON, use the Fetch API & ES6
     fetch(fetchfile)
       .then(response => response.text())
