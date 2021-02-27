@@ -1,0 +1,20 @@
+<h2>Basic Post Display Itereation</h2>
+<p class="date">2021:02:27-14:36</p>
+
+<p>Clarifi.Social - now iterating multiple posts as 'includes' in the main page!</p>
+
+<p>I still need to figure out how to trap "file not found" errors and skip them in the 
+loop, but I can now begin creating posts, like a 'real' blog. This is pretty huge.</p>
+
+<p>The to-do list for stage 0.0.1 is as follows</p>
+
+<ul>
+    <li>Trap "file not found" errors and skip them,</li>
+    <li>Count files in the posts folder to set delimeters,</li>
+    <li>Build a posts menu ordered by date and</li>
+    <li>then stage 0.0.2, create a single JSON database</li>
+</ul>
+
+<p class="signoff">ATB, Crunchysteve :-)</p>
+
+<hr />

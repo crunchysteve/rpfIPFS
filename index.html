@@ -27,6 +27,23 @@
   </div>
 
   <script>
+    myFileList();
+    function myFileList() {
+      var i;
+      var myFile = "";
+      var myOut = "<div>";
+      for(i=3;i>1;i--){
+        myFile = "posts/" + i + ".post";
+        //console.log(myFile);
+        fetch(myFile).then(response => response.text()).then(data => {myOut = myOut + data;
+          myOut = myOut + "</div><br />";
+          document.getElementById("output").innerHTML = myOut;
+          //console.log(myOut);});
+      }
+    }
+  </script>
+  
+  <!-- <script>
     var fetchfile = "posts/1.post";
     // As with JSON, use the Fetch API & ES6
     fetch(fetchfile)
@@ -35,8 +52,9 @@
   	  // Do something with your data
       document.getElementById("output").innerHTML = "<br />" + data;
     });
-  </script>
-
+    
+  </script> -->
+  
   <script src="scripts/app.js"></script>
   <noscript>You need to enable JavaScript to view the full site.</noscript>
   
