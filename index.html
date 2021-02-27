@@ -10,7 +10,7 @@
   <div class="heading">
     <img class="heading" id="logo" src="images/moon-logo.png" />
     <button class="btn">Make Dark</button>
-    <h1>Open.Social</h1>
+    <h1>Clarifi.Social</h1>
     <p class="tagline">Evolving new social media. (v.0.0.1)</p>
   </div>
   <hr />
@@ -18,22 +18,23 @@
   <div id="output"></div>
 
   <div class="footer">
-    &copy;2021, Crunchysteve, 
+    <p>&copy;2021, Crunchysteve, 
     <a href="https://clarifi.social/" target="_blank">clarifi.social</a>, 
     limited rights reserved. You may quote freely, with attribution but you
     may not make money from any ideas expressed here, unless you are in a 
     formal business/financial agreement with Crunchysteve. Linkage is an
-    adequate form of attribution. 
+    adequate form of attribution.</p>
     
-    Credits: The moon-logo belongs to the IPFS team
+    <p>Credits: The moon-logo belongs to the IPFS team
     and will be replaced once I get around to it. I was using the RPF app
     to learn how to set up a distributed page on IPFS and point a domain at
     it. IPFS and Fleek are my current tools on this journey, along with 
     JavaScript and GitHub. I'm on a learning journey, as well as a mission
-    from Dog. Changing the world starts with a will.
+    from Dog. Changing the world starts with a will.</p>
   </div>
 
   <script>
+    
     myFileList();
     function myFileList() {
       var i;
@@ -45,7 +46,7 @@
         fetch(myFile).then(response => response.text()).then(data => {myOut = myOut + data;
           myOut = myOut + "</div><br />";
           document.getElementById("output").innerHTML = myOut;
-          //console.log(myOut);
+          console.log(fetch(myFile).length);
         });
       }
     }

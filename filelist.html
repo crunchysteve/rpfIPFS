@@ -1,0 +1,19 @@
+<!DOCTYPE HTML>
+<html>
+    <head>
+    </head>
+    <body>
+        <p class="demo"></p>
+        <img src="https://crunchysteve-team-bucket.storage.fleek.co/code1.png" />
+    </body>
+
+    <script>
+        getText("post");
+        
+        async function getText(file) {
+          let myObject = await fetch(file);
+          let myText = await myObject.text();
+          document.getElementById("demo").innerHTML = myText;
+        }
+        </script>
+</html>
