@@ -10,9 +10,9 @@
     <script>
         getText("post");
         
-        async function getText(file) {
-          let myObject = await fetch(file);
-          let myText = await myObject.text();
+        function getText(file) {
+          let myObject = fetch(file);
+          let myText = myObject.text();
           document.getElementById("demo").innerHTML = myText;
         }
         </script>
