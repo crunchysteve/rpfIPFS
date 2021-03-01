@@ -40,7 +40,7 @@
       var i;
       var myFile = "";
       var myOut = "<div>";
-      for(i=3;i>1;i--){
+      for(i=4;i>1;i--){
         myFile = "posts/" + i + ".post";
         //console.log(myFile);
         fetch(myFile).then(response => response.text()).then(data => {myOut = myOut + data;
