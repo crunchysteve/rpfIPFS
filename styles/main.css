@@ -53,7 +53,7 @@
 
   img.heading {
     position: relative;
-    right: 400px;
+    left: 400px;
     bottom: 10px;
     filter: invert(var(--state));
   }
