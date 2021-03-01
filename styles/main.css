@@ -16,6 +16,11 @@
       background: var(--bg);
   }
 
+  #txt {
+    position: relative;
+    top: 300px;
+  }
+
   h1 {
     position: relative;
     left: 20px;
